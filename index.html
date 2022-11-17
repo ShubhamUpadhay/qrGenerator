@@ -9,7 +9,9 @@
 </head>
 
 <body>
+    <h1>HEY</h1>
     <h3 id="name"></h3>
+
     <img src="" alt="test-image" id="ii" />
     <script>
         const urlSearchParams = new URLSearchParams(window.location.search);
@@ -27,7 +29,7 @@
 
         }).then(res => res.json()).then(
             data => {
-                console.log(data.name)
+                console.log(data)
                 name.innerText = data.name
                 if (data.email === 404) {
                     abc.setAttribute('src', 'https://www.flitty.app/assets/Logo/BigHeartLogo.png')
