@@ -32,9 +32,11 @@
                 console.log('data =>', data)
                 name.innerText = data.name
                 if (data.email === 404) {
+
                     abc.setAttribute('src', 'https://www.flitty.app/assets/Logo/BigHeartLogo.png')
                 }
                 else {
+                    console.log(data.email)
                     abc.setAttribute('src', data.email)
                 }
             }
